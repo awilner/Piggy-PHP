@@ -245,11 +245,11 @@ class ImportController extends AppController {
 						break;
 	                                case 'C': // Cleared status
 						if($value == '*'||$value == 'c'||$value == 'C')
-							$status = 'CLEARED';
+							$status = 'C';
 						else if($value == 'X'||$value == 'x'||$value == 'R'||$value == 'r')
-							$status = 'RECONCILED';
+							$status = 'R';
 						else
-							$status = 'PENDING';
+							$status = 'P';
 
 						break;
 					case 'I': // Share price (for security transactions).
@@ -311,7 +311,7 @@ class ImportController extends AppController {
 				{
 					// This is probably a duplicate. Force marking it as pending.
 					// TODO: find a better solution to this.
-					$newTransaction['status'] = 'PENDING';
+					$newTransaction['status'] = 'P';
 
 					//if(!array_key_exists($accountName,$results))
 					//	$results[$accountName] = array();

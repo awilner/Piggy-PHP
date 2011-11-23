@@ -104,7 +104,7 @@ class Transaction extends AppModel {
 	function beforeSave($options)
 	{
 		// If the transaction is pending, ignore.
-		if(array_key_exists('status',$this->data[$this->alias]) && $this->data[$this->alias]['status'] == 'PENDING')
+		if(array_key_exists('status',$this->data[$this->alias]) && $this->data[$this->alias]['status'] == 'P')
 			return true;
 
 		// Adjust balances as needed. First we get some essential fields.
@@ -126,7 +126,7 @@ class Transaction extends AppModel {
 			$oldStatus = $oldValues[$this->alias]['status'];
 
 			// First check if the accounts changed (or if the transaction status changed from pending to something else).
-			if($fromAccount != $oldFromAccount || ($oldStatus == 'PENDING' && $status != $oldStatus))
+			if($fromAccount != $oldFromAccount || ($oldStatus == 'P' && $status != $oldStatus))
 			{
 				if($fromAccount != $oldFromAccount)
 				{
@@ -159,7 +159,7 @@ class Transaction extends AppModel {
 			}
 
 			// First check if the accounts changed (or if the transaction status changed from pending to something else).
-			if($toAccount != $oldToAccount || ($oldStatus == 'PENDING' && $status != $oldStatus))
+			if($toAccount != $oldToAccount || ($oldStatus == 'P' && $status != $oldStatus))
 			{
 				if($toAccount != $oldToAccount)
 				{
@@ -202,7 +202,7 @@ class Transaction extends AppModel {
 	function beforeDelete($cascade)
 	{
 		// If the transaction is pending, ignore.
-		if($this->data[$this->alias]['status'] == 'PENDING')
+		if($this->data[$this->alias]['status'] == 'P')
 			return true;
 
 		// Adjust balances as needed. First we get some essential fields.
@@ -219,7 +219,7 @@ class Transaction extends AppModel {
 	// Retrieve a list of transactions for a given account and a given date. Pending transactions are ignored.
 	function listTransactions($account,$startDate = null,$endDate=null)
 	{
-		$conditions = array ('OR'=> array('to_account_id'=>$account, 'from_account_id'=>$account),'status !='=>'PENDING');
+		$conditions = array ('OR'=> array('to_account_id'=>$account, 'from_account_id'=>$account),'status !='=>'P');
 		if($startDate != null)
 			$conditions['date >='] = $startDate;
 		if($endDate != null)
