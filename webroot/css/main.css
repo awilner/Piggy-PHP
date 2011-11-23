@@ -1,0 +1,33 @@
+/*div#loading_div,#main_display {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}*/
+
+div#main_display
+{
+	width:78%;
+	float:left;
+	padding:10px;
+}
+
+div#left_menu_list
+{
+	width:20%;
+	float:left;
+	text-align:left;
+	font-size:x-small;
+}
+
+div#loading_div {
+	padding:25px;
+	text-align: center;
+	vertical-align:middle;
+	z-index: 10;
+}
+
+div#nav_menu_bar {
+	width:80%;
+	float:right;

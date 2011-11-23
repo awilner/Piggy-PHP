@@ -1,0 +1,35 @@
+div#nav_menu_bar {
+	border-bottom:#888888 solid 1px;
+}
+
+ul#nav_menu {
+	font-size:large;
+	list-style:none;
+}
+
+ul#nav_menu li {
+	background-color:#CCCCCC;
+	float:left;
+	border:#888888 solid 1px;
+	border-bottom-style:none;
+	margin:0 3px 0 0;
+	cursor:default;
+	text-decoration:none;
+}
+
+ul#nav_menu li.selected {
+	background-color:#AAAAAA;
+	padding:20px;
+}
+
+ul#nav_menu li:not(.selected):hover {
+	background-color:#DDDDDD;
+	cursor:pointer;
+}
+
+ul#nav_menu li a {
+	display:block;
+	padding:20px;
+	text-decoration:none;
+}
+

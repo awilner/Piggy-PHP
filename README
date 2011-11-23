@@ -1,0 +1,8 @@
+Piggy Project
+
+This project is supposed to become a Personal Finance Management application. It was born of my insatisfaction with every current solution. I wanted something that handled QIF/OFX imports, investments, bills and recurring transactions, available online, and maybe with a later mobile app.
+
+This is still a work in progress, very far from complete (in fact, it's just a mockup by now).
+
+It uses CakePHP 2.0, so the project repository is only the /app folder.
+

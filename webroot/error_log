@@ -1,0 +1,126 @@
+[26-Oct-2011 11:21:39] PHP Fatal error:  Call to a member function link() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Layouts/default.ctp on line 35
+[26-Oct-2011 11:24:43] PHP Fatal error:  Call to a member function link() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Layouts/default.ctp on line 35
+[26-Oct-2011 11:27:16] PHP Fatal error:  Call to a member function div() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Layouts/default.ctp on line 55
+[26-Oct-2011 11:42:27] PHP Fatal error:  Call to a member function div() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Layouts/default.ctp on line 55
+[26-Oct-2011 11:42:36] PHP Fatal error:  Call to a member function div() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Layouts/default.ctp on line 55
+[26-Oct-2011 11:43:23] PHP Fatal error:  Call to a member function divEnd() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Layouts/default.ctp on line 57
+[26-Oct-2011 11:44:27] PHP Fatal error:  Call to a member function divEnd() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Layouts/default.ctp on line 57
+[26-Oct-2011 11:45:06] PHP Fatal error:  Call to a member function image() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Layouts/default.ctp on line 60
+[26-Oct-2011 11:56:34] PHP Fatal error:  Call to a member function flash() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Users/login.ctp on line 2
+[26-Oct-2011 16:37:10] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home2/cameloma/public_html/pgy_ck2/app/Controller/AppController.php on line 6
+[26-Oct-2011 16:40:40] PHP Fatal error:  Call to a member function setFlash() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/Controller/UsersController.php on line 74
+[26-Oct-2011 16:42:31] PHP Fatal error:  Call to a member function flash() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Users/login.ctp on line 2
+[26-Oct-2011 16:45:40] PHP Fatal error:  Call to a member function flash() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Users/login.ctp on line 2
+[26-Oct-2011 18:14:45] PHP Fatal error:  Call to a member function flash() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Users/login.ctp on line 2
+[26-Oct-2011 18:19:59] PHP Fatal error:  Call to a member function flash() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Layouts/default.ctp on line 49
+[26-Oct-2011 18:21:09] PHP Fatal error:  Call to a member function isAjax() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/Controller/AccountsController.php on line 113
+[26-Oct-2011 18:21:14] PHP Fatal error:  Call to a member function isAjax() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/Controller/AccountsController.php on line 113
+[26-Oct-2011 18:23:40] PHP Fatal error:  Call to a member function isAjax() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/Controller/AccountsController.php on line 113
+[26-Oct-2011 18:32:39] PHP Fatal error:  Call to a member function link() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Elements/Accounts/AccountList.ctp on line 10
+[27-Oct-2011 06:13:41] PHP Fatal error:  Call to a member function link() on a non-object in /home2/cameloma/public_html/pgy_ck2/app/View/Elements/Accounts/AccountList.ctp on line 10
+[27-Oct-2011 09:43:35] PHP Fatal error:  Class 'Sanitize' not found in /home2/cameloma/public_html/pgy_ck2/app/Controller/ImportController.php on line 106
+[27-Oct-2011 09:53:41] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in /home2/cameloma/public_html/pgy_ck2/lib/Cake/Utility/Debugger.php on line 442
+[27-Oct-2011 09:59:12] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 78 bytes) in /home2/cameloma/public_html/pgy_ck2/lib/Cake/Model/Datasource/DboSource.php on line 749
+[27-Oct-2011 10:21:19] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/pgy_ck2/lib/Cake/Model/Datasource/DboSource.php on line 2502
+[27-Oct-2011 10:34:41] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30 bytes) in /home2/cameloma/public_html/pgy_ck2/lib/Cake/Model/Datasource/DboSource.php on line 757
+[27-Oct-2011 11:22:14] PHP Fatal error:  Call to a member function check() on a non-object in /home2/cameloma/public_html/piggy/app/Plugin/Wizard/Controller/Component/WizardComponent.php on line 160
+[27-Oct-2011 11:22:55] PHP Fatal error:  Cannot assign by reference to overloaded object in /home2/cameloma/public_html/piggy/app/Plugin/Wizard/Controller/Component/WizardComponent.php on line 157
+[27-Oct-2011 11:25:01] PHP Fatal error:  Cannot assign by reference to overloaded object in /home2/cameloma/public_html/piggy/app/Plugin/Wizard/Controller/Component/WizardComponent.php on line 157
+[27-Oct-2011 11:45:12] PHP Fatal error:  Call to a member function process() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/ImportController.php on line 16
+[27-Oct-2011 13:24:09] PHP Fatal error:  Class 'Sanitize' not found in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 94
+[27-Oct-2011 13:26:53] PHP Fatal error:  Call to a member function listTransactions() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 104
+[27-Oct-2011 13:37:32] PHP Fatal error:  Call to a member function listTransactions() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 104
+[27-Oct-2011 13:42:18] PHP Fatal error:  Call to a member function isAuthorized() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/TransactionsController.php on line 9
+[27-Oct-2011 13:49:01] PHP Fatal error:  Call to undefined function  isauthorized() in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 97
+[27-Oct-2011 13:49:35] PHP Fatal error:  Call to a member function isAuthorized() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/TransactionsController.php on line 9
+[27-Oct-2011 13:53:55] PHP Fatal error:  Call to a member function isAuthorized() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/TransactionsController.php on line 9
+[27-Oct-2011 13:54:18] PHP Fatal error:  Class 'Sanitize' not found in /home2/cameloma/public_html/piggy/app/Controller/AppController.php on line 17
+[27-Oct-2011 13:55:44] PHP Fatal error:  Call to a member function field() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/AppController.php on line 20
+[27-Oct-2011 13:58:25] PHP Fatal error:  Call to a member function sort() on a non-object in /home2/cameloma/public_html/piggy/app/View/Transactions/index.ctp on line 5
+[27-Oct-2011 14:00:07] PHP Fatal error:  Call to a member function sort() on a non-object in /home2/cameloma/public_html/piggy/app/View/Transactions/index.ctp on line 5
+[27-Oct-2011 14:04:52] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[27-Oct-2011 14:04:58] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 05:08:39] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 12 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 12:38:39] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 83 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 13:23:30] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 77 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 13:57:40] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 13:59:04] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 13:59:32] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 14:03:37] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 14:05:48] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 14:06:46] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 79 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 14:07:04] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 14:07:43] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 74 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 14:08:49] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 76 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[28-Oct-2011 14:10:56] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[03-Nov-2011 11:43:29] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 87 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[04-Nov-2011 10:06:48] PHP Fatal error:  Call to a member function read() on a non-object in /home2/cameloma/public_html/piggy/app/Model/NavMenu.php on line 40
+[04-Nov-2011 10:10:09] PHP Fatal error:  Call to a member function read() on a non-object in /home2/cameloma/public_html/piggy/app/Model/NavMenu.php on line 40
+[04-Nov-2011 10:10:13] PHP Fatal error:  Call to a member function read() on a non-object in /home2/cameloma/public_html/piggy/app/Model/NavMenu.php on line 40
+[04-Nov-2011 10:17:33] PHP Fatal error:  Call to a member function read() on a non-object in /home2/cameloma/public_html/piggy/app/Model/NavMenu.php on line 40
+[04-Nov-2011 10:18:58] PHP Fatal error:  Call to a member function read() on a non-object in /home2/cameloma/public_html/piggy/app/Model/NavMenu.php on line 40
+[04-Nov-2011 12:01:01] PHP Fatal error:  Call to a member function menu() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 24
+[04-Nov-2011 12:01:34] PHP Fatal error:  Call to a member function user() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 20
+[04-Nov-2011 12:01:52] PHP Fatal error:  Call to a member function read() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/Component/NavMenuComponent.php on line 9
+[04-Nov-2011 12:03:24] PHP Fatal error:  Call to undefined method NavMenuComponent::set() in /home2/cameloma/public_html/piggy/app/Controller/Component/NavMenuComponent.php on line 17
+[04-Nov-2011 12:04:22] PHP Fatal error:  Call to a member function menu() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/Component/NavMenuComponent.php on line 17
+[04-Nov-2011 12:08:55] PHP Fatal error:  Call to a member function menu() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/Component/NavMenuComponent.php on line 19
+[04-Nov-2011 13:59:33] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[05-Nov-2011 12:52:00] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 82 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[07-Nov-2011 06:21:30] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 87 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[07-Nov-2011 09:48:26] PHP Parse error:  syntax error, unexpected T_RETURN, expecting T_STRING or T_VARIABLE or '{' or '$' in /home2/cameloma/public_html/piggy/app/Controller/Component/NavMenuComponent.php on line 28
+[07-Nov-2011 09:49:00] PHP Fatal error:  Unsupported operand types in /home2/cameloma/public_html/piggy/app/Model/Account.php on line 140
+[07-Nov-2011 10:15:33] PHP Parse error:  syntax error, unexpected ';' in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 127
+[07-Nov-2011 10:15:59] PHP Parse error:  syntax error, unexpected ')' in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 136
+[07-Nov-2011 10:16:19] PHP Fatal error:  Call to undefined method NavMenuComponent::checkType() in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 150
+[07-Nov-2011 10:21:07] PHP Parse error:  syntax error, unexpected '(', expecting ',' or ';' in /home2/cameloma/public_html/piggy/app/Controller/Component/NavMenuComponent.php on line 8
+[07-Nov-2011 10:22:35] PHP Fatal error:  Call to undefined method NavMenuComponent::checkTab() in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 151
+[07-Nov-2011 10:23:16] PHP Fatal error:  Call to undefined function  checktype() in /home2/cameloma/public_html/piggy/app/Model/NavMenu.php on line 63
+[07-Nov-2011 10:29:55] PHP Fatal error:  Call to undefined method AccountsController::debug() in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 163
+[08-Nov-2011 10:43:56] PHP Parse error:  syntax error, unexpected ';' in /home2/cameloma/public_html/piggy/app/View/Elements/navmenu.ctp on line 9
+[08-Nov-2011 11:25:20] PHP Fatal error:  Call to a member function isAjax() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/AppController.php on line 21
+[08-Nov-2011 12:23:27] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home2/cameloma/public_html/piggy/app/Model/NavMenu.php on line 17
+[08-Nov-2011 12:24:17] PHP Fatal error:  Call to undefined function  undef() in /home2/cameloma/public_html/piggy/app/Model/NavMenu.php on line 37
+[08-Nov-2011 12:28:50] PHP Fatal error:  Call to undefined method NavMenuComponent::menu() in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 30
+[08-Nov-2011 12:50:01] PHP Parse error:  syntax error, unexpected ';' in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 31
+[08-Nov-2011 12:50:12] PHP Fatal error:  Call to a member function menu() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 31
+[08-Nov-2011 12:52:43] PHP Fatal error:  Call to undefined method View::debug() in /home2/cameloma/public_html/piggy/app/View/Elements/navmenuupdate.ctp on line 2
+[08-Nov-2011 13:04:15] PHP Parse error:  syntax error, unexpected $end in /home2/cameloma/public_html/piggy/app/View/Elements/navmenuupdate.ctp on line 14
+[09-Nov-2011 08:34:36] PHP Parse error:  syntax error, unexpected ';' in /home2/cameloma/public_html/piggy/app/View/Elements/navmenu.ctp on line 8
+[09-Nov-2011 08:35:05] PHP Fatal error:  Call to a member function link() on a non-object in /home2/cameloma/public_html/piggy/app/View/Elements/navmenu.ctp on line 4
+[10-Nov-2011 09:57:11] PHP Parse error:  syntax error, unexpected '}', expecting '(' in /home2/cameloma/public_html/piggy/app/Controller/DashboardController.php on line 10
+[11-Nov-2011 11:26:01] PHP Fatal error:  Call to undefined function  array_exists() in /home2/cameloma/public_html/piggy/app/Model/NavMenu.php on line 64
+[17-Nov-2011 06:58:52] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 40961 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/View/View.php on line 596
+[17-Nov-2011 06:59:08] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 40961 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/View/View.php on line 596
+[17-Nov-2011 07:01:54] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 40961 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/View/View.php on line 596
+[17-Nov-2011 07:06:51] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 40961 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/View/View.php on line 596
+[17-Nov-2011 07:07:25] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8192 bytes) in /home2/cameloma/public_html/piggy/app/View/Elements/navmenuupdate.ctp on line 1
+[17-Nov-2011 07:09:36] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 40961 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/View/View.php on line 596
+[17-Nov-2011 07:09:42] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 40961 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/View/View.php on line 596
+[17-Nov-2011 10:01:47] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 165
+[17-Nov-2011 10:05:54] PHP Parse error:  syntax error, unexpected ')' in /home2/cameloma/public_html/piggy/app/Controller/UsersController.php on line 88
+[18-Nov-2011 05:23:13] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[18-Nov-2011 05:29:20] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 77 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[18-Nov-2011 08:18:48] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 96 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[18-Nov-2011 08:30:50] PHP Parse error:  syntax error, unexpected '{' in /home2/cameloma/public_html/piggy/app/View/Elements/accountlist.ctp on line 3
+[18-Nov-2011 08:30:51] PHP Parse error:  syntax error, unexpected '{' in /home2/cameloma/public_html/piggy/app/View/Elements/accountlist.ctp on line 3
+[18-Nov-2011 08:31:35] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[18-Nov-2011 08:52:54] PHP Fatal error:  Call to undefined method NavMenuComponent::checkType() in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 30
+[18-Nov-2011 08:55:02] PHP Fatal error:  Call to undefined method NavMenuComponent::tabs() in /home2/cameloma/public_html/piggy/app/Controller/AccountsController.php on line 40
+[21-Nov-2011 09:28:59] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[21-Nov-2011 09:34:27] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 87 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[21-Nov-2011 09:36:17] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 87 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[21-Nov-2011 09:48:44] PHP Fatal error:  Unsupported operand types in /home2/cameloma/public_html/piggy/lib/Cake/View/Helper/HtmlHelper.php on line 530
+[21-Nov-2011 10:53:58] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home2/cameloma/public_html/piggy/app/View/Elements/navmenu.ctp on line 43
+[21-Nov-2011 12:31:29] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[21-Nov-2011 12:52:36] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[21-Nov-2011 12:52:43] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 81 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[21-Nov-2011 12:55:05] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 81 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[22-Nov-2011 07:08:33] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 24 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[22-Nov-2011 07:08:46] PHP Fatal error:  Call to a member function checkType() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/TransactionsController.php on line 37
+[22-Nov-2011 07:08:56] PHP Fatal error:  Call to a member function checkType() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/TransactionsController.php on line 37
+[22-Nov-2011 07:11:58] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 81 bytes) in /home2/cameloma/public_html/piggy/lib/Cake/Model/Datasource/Database/Mysql.php on line 245
+[22-Nov-2011 11:18:13] PHP Fatal error:  Call to a member function getPath() on a non-object in /home2/cameloma/public_html/piggy/app/Controller/TransactionsController.php on line 56
+[22-Nov-2011 12:11:04] PHP Parse error:  syntax error, unexpected ';' in /home2/cameloma/public_html/piggy/app/Model/Transaction.php on line 240
+[22-Nov-2011 12:46:12] PHP Fatal error:  Call to a member function field() on a non-object in /home2/cameloma/public_html/piggy/app/Model/Transaction.php on line 224
+[22-Nov-2011 12:52:30] PHP Parse error:  syntax error, unexpected '[' in /home2/cameloma/public_html/piggy/app/Model/Transaction.php on line 223
