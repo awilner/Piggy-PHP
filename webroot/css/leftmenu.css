@@ -2,13 +2,3 @@ div#left_menu_list {
 	border-right:#888888 solid 1px;
 }
 
-td.balance
-{
-	text-align:right;
-}
-
-td.negative
-{
-	color:red;
-}
-

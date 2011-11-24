@@ -46,19 +46,19 @@ if(isset($accounts))
                            );
         ?>
       </th>
-      <td class="balance<?php if($account['balance'] < 0) echo " negative"; ?>"><?php echo $this->Number->currency($account['balance'],$account['currency']); ?></td>
+      <td class="value<?php if($account['balance'] < 0) echo " negative"; ?>"><?php echo $this->Number->currency($account['balance'],$account['currency']); ?></td>
     </tr>
     <? endforeach; ?>
     <tr class="account_group_total">
       <th class="account" scope="row"><?php echo __("Total"); ?></td>
-      <td class="balance<?php if($totals[$type]['balance'] < 0) echo " negative"; ?>"><?php echo $this->Number->currency($totals[$type]['balance'],$userDefaultCurrency); ?></td>
+      <td class="value<?php if($totals[$type]['balance'] < 0) echo " negative"; ?>"><?php echo $this->Number->currency($totals[$type]['balance'],$userDefaultCurrency); ?></td>
     </tr>
   </tbody>
   <? endforeach; ?>
   <tfoot id="net_worth">
     <tr>
       <th class="account" scope="row"><?php echo __("Net Worth"); ?></th>
-      <td class="balance<?php if($netWorth < 0) echo " negative"; ?>"><?php echo $this->Number->currency($netWorth,$userDefaultCurrency); ?></td>
+      <td class="value<?php if($netWorth < 0) echo " negative"; ?>"><?php echo $this->Number->currency($netWorth,$userDefaultCurrency); ?></td>
     </tr>
   </tfoot>
 </table>

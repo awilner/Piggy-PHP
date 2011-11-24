@@ -55,6 +55,13 @@ class TransactionsController extends AppController {
 		$this->set('selectedTab','transactions');
 		$this->set('accountId',$accountId);
 
+		// Set account name.
+		$this->Account->id = $accountId;
+		$this->set('account',$this->Account->field('name'));
+
+		// Set month and year.
+		$this->set('date',substr($yearMonth,4,2).'/'.substr($yearMonth,0,4));
+
 		// If this is an AJAX request, render it appropriately.
 		if($this->request->isAjax())
                         $this->render('/Elements/ajax','ajax');

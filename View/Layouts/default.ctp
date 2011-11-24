@@ -33,6 +33,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->css('main');
 		echo $this->Html->css('leftmenu');
 		echo $this->Html->css('navmenu');
+		echo $this->Html->css('transactions');
 
 		echo $this->Html->script('prototype');
 		echo $this->Html->script('scriptaculous.js?load=effects'); 

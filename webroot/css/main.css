@@ -31,3 +31,15 @@ div#loading_div {
 div#nav_menu_bar {
 	width:80%;
 	float:right;
+}
+
+td.value
+{
+	text-align:right;
+}
+
+td.negative
+{
+	color:red;
+}
+
