@@ -54,7 +54,7 @@ class Transaction extends AppModel {
 		}
 	}
 
-	function _removeFromBalances($account,$value,$startDate,$endDate = null)
+	private function _removeFromBalances($account,$value,$startDate,$endDate = null)
 	{
 		// Check if the transaction is the only one for the given date and account.
 		$count = $this->find('count',array('conditions'=>array('OR'=>array('to_account_id'=>$account,'from_account_id'=>$account),'date'=>$startDate)));
@@ -73,7 +73,7 @@ class Transaction extends AppModel {
 		return self::$balance->updateAll($fields,$conditions); 
 	}
 
-	function _addToBalances($account,$value,$startDate,$endDate = null)
+	private function _addToBalances($account,$value,$startDate,$endDate = null)
 	{
                 // Check if the account already has a balance for the given date.
 		$count = self::$balance->find('count',array('conditions'=>array('account_id'=>$account,'date'=>$startDate)));
@@ -219,6 +219,8 @@ class Transaction extends AppModel {
 	// Retrieve a list of transactions for a given account and a given date. Pending transactions are ignored.
 	function listTransactions($account,$startDate = null,$endDate=null)
 	{
+		$transactions = array();
+
 		$conditions = array ('OR'=> array('to_account_id'=>$account, 'from_account_id'=>$account),'status !='=>'P');
 		if($startDate != null)
 			$conditions['date >='] = $startDate;
@@ -226,16 +228,26 @@ class Transaction extends AppModel {
 			$conditions['date <='] = $endDate;
 
 		// Get the results.
-		$transactions = $this->find('all', array('conditions'=>$conditions,'order'=>'date'));
+		$results = $this->find('all', array('conditions'=>$conditions,'order'=>'date'));
 
 		// Now get the full path to the category of each transaction.
-		if($transactions)
+		if($results)
 		{
 			// Get the account's currency.
 			$currency = $this->FromAccount->find('first',array('fields'=>'Currency.symbol','conditions'=>array('FromAccount.id'=>$account)));
 
-			foreach($transactions as &$transaction)
+			// Get the last balance.
+			if(isset($startDate))
+				$lastBalance = self::$balance->field('balance',array('account_id'=>$account,'date <'=>$startDate),'date DESC');
+			else
+				$lastBalance = 0;
+
+			foreach($results as &$transaction)
 			{
+				// Group transactions by date.
+				if(!array_key_exists($transaction[$this->alias]['date'],$transactions))
+					$transactions[$transaction[$this->alias]['date']] = array();
+
 				// Set the currency.
 				$transaction[$this->alias]['currency'] = $currency['Currency']['symbol'];
 
@@ -253,11 +265,21 @@ class Transaction extends AppModel {
 				if($fromAccount == $account)
 				{
 					$transaction[$this->alias]['other_account'] = $transaction['ToAccount']['name'];
+					$transaction[$this->alias]['debit'] = $transaction[$this->alias]['value'];
 					$transaction[$this->alias]['value'] = -$transaction[$this->alias]['value'];
 				}
 				else
+				{
 					$transaction[$this->alias]['other_account'] = $transaction['FromAccount']['name'];
+                                        $transaction[$this->alias]['credit'] = $transaction[$this->alias]['value'];
+				}
 
+				// Calculate balance.
+				$lastBalance += $transaction[$this->alias]['value'];
+				$transaction[$this->alias]['balance'] = $lastBalance;
+
+				// Finally, add the transaction to the list.
+				array_push($transactions[$transaction[$this->alias]['date']],$transaction);
 			}
 		}
 		return $transactions;

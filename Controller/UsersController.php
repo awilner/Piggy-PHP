@@ -68,6 +68,7 @@ class UsersController extends AppController {
 	}
 
 	function login() {
+		$this->set('isAjax', $this->RequestHandler->isAjax());
         	if ($this->Auth->login()) {
 			$this->redirect($this->Auth->redirect());
 		} else {

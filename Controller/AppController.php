@@ -3,7 +3,7 @@ App::uses('Sanitize', 'Utility');
 class AppController extends Controller {
 	public $components = array(
 		'Auth' => array(
-			'loginRedirect' => array('controller' => 'dashboard', 'action' => 'index'),
+			'loginRedirect' => array('controller' => 'accounts', 'action' => 'index'),
 			'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
 			'ajaxLogin' => '../Users/login'
 			),

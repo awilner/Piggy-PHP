@@ -1,4 +1,8 @@
 <?php
+    if($isAjax)
+?>
+<div id="main_display">
+<?php
     echo $this->Session->flash('auth');
     echo $this->Form->create('User', array('action' => 'login'));
 ?>
@@ -10,3 +14,7 @@
 ?>
 </fieldset>
 <?php echo $this->Form->end(__('Login')); ?>
+<?php
+    if($isAjax)
+?>
+</div>
