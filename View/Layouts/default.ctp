@@ -38,6 +38,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->script('prototype');
 		echo $this->Html->script('scriptaculous.js?load=effects'); 
 		echo $this->Html->script('updater.js'); 
+		echo $this->Html->script('resize.js'); 
 
 		echo $scripts_for_layout;
 	?>

@@ -9,13 +9,17 @@
 div#main_display
 {
 	width:78%;
-	float:left;
-	padding:10px;
+	height:780px;
+	overflow:auto;
+	float:right;
+	padding:5px;
 }
 
 div#left_menu_list
 {
 	width:20%;
+	height:780px;
+	overflow:auto;
 	float:left;
 	text-align:left;
 	font-size:x-small;

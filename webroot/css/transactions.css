@@ -1,0 +1,39 @@
+table.transaction
+{
+	border-collapse:collapse;
+}
+
+tr.altrow td
+{
+	background-color:#EEEEEE;
+}
+
+td.transaction
+{
+	border:1px solid #555555;
+}
+
+tr.transaction_upper td
+{
+	border-bottom:1px solid #DDDDDD;
+}
+
+td.transaction_noborder
+{
+	border:none;
+}
+
+td.transaction_date
+{
+	border-bottom:1px solid #555555;
+}
+
+td.payee
+{
+	width:50%;
+}
+
+td.status
+{
+	width:1%;
+}
