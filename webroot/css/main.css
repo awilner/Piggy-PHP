@@ -9,7 +9,6 @@
 div#main_display
 {
 	width:78%;
-	height:780px;
 	overflow:auto;
 	float:right;
 	padding:5px;
@@ -18,7 +17,6 @@ div#main_display
 div#left_menu_list
 {
 	width:20%;
-	height:780px;
 	overflow:auto;
 	float:left;
 	text-align:left;

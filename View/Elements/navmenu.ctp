@@ -1,10 +1,10 @@
-<ul id="nav_menu">
+<ul id="nav_menu" class="nav tab">
 <?php if(isset($navMenu)) foreach($navMenu as $key=>$name):
 	// Skip transactions tab if no specific account is selected.
 	if(isset($accountId) && !is_numeric($accountId) && $key == 'transactions')
 		continue;
 ?>
-  <li class="nav_menu_tab<?php if($selectedTab == $key) echo ' selected'; ?>" id="nav_menu_<?php echo $key; ?>">
+  <li class="nav tab<?php if($selectedTab == $key) echo ' selected'; ?>" id="nav_menu_<?php echo $key; ?>">
 <?php
 	if($selectedTab != $key)
 	{

@@ -2,34 +2,53 @@ div#nav_menu_bar {
 	border-bottom:#888888 solid 1px;
 }
 
-ul#nav_menu {
+ul.nav {
 	font-size:large;
 	list-style:none;
 }
 
-ul#nav_menu li {
+ul.nav li {
 	background-color:#CCCCCC;
 	float:left;
 	border:#888888 solid 1px;
-	border-bottom-style:none;
-	margin:0 3px 0 0;
 	cursor:default;
 	text-decoration:none;
+	margin:0;
 }
 
-ul#nav_menu li.selected {
+ul.tab li {
+	border-bottom-style:none;
+	margin:0 3px 0 0;
+}
+
+ul.nav li.selected {
 	background-color:#AAAAAA;
+	padding:5px;
+}
+
+ul.tab li.selected {
 	padding:20px;
 }
 
-ul#nav_menu li:not(.selected):hover {
+ul.nav li:not(.selected):hover {
 	background-color:#DDDDDD;
 	cursor:pointer;
 }
 
-ul#nav_menu li a {
+ul.nav li a {
 	display:block;
-	padding:20px;
 	text-decoration:none;
+	padding:5px;
 }
 
+ul.tab li a {
+	padding:20px;
+}
+
+div#year_selector {
+	float:right;
+}
+
+div#month_selector {
+	float:right;
+}

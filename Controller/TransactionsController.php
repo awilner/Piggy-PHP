@@ -60,7 +60,8 @@ class TransactionsController extends AppController {
 		$this->set('account',$this->Account->field('name'));
 
 		// Set month and year.
-		$this->set('date',substr($yearMonth,4,2).'/'.substr($yearMonth,0,4));
+		$this->set('month',substr($yearMonth,4,2));
+		$this->set('year',substr($yearMonth,0,4));
 
 		// If this is an AJAX request, render it appropriately.
 		if($this->request->isAjax())
