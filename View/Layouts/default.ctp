@@ -61,7 +61,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 			<div id="main_content">
 				<div id="headings">
-					<h1 id="page_header"><?php echo $page_header; ?></h1>
+					<h1 id="page_header"><?php if(isset($page_header)) echo $page_header; ?></h1>
 					<div id="timeline">
 						<?php if(isset($month) && isset($year)) echo $this->element('timeline'); ?>
 					</div>
