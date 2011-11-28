@@ -6,12 +6,59 @@
     left: 0;
 }*/
 
-div#main_display
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	/*background: #003d4c;
+	color: #fff;*/
+	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+	font-size:90%;
+	text-align: left;
+	/*margin: 0;*/
+}
+
+h1, h2, h3, h4
+{
+    /*font-weight: normal;*/
+    margin-bottom: 0.5em;
+}
+
+h1
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #003D4C;
+    font-size: 190%;
+}
+
+div#header
+{
+    padding: 10px 20px;
+}
+
+div#header h1
+{
+    background: url("../img/cake.icon.png") no-repeat scroll left center #003D4C;
+    color: #FFFFFF;
+    line-height: 20px;
+    padding: 0 30px;
+}
+
+div#main_content
 {
 	width:78%;
 	overflow:auto;
+	overflow-y:scroll;
 	float:right;
 	padding:5px;
+}
+
+div#headings
+{
+	clear:both;
+	overflow:auto;
 }
 
 div#left_menu_list

@@ -1,1 +1,1 @@
-Overview - <?php echo $currentAccountOverview; ?>
+<?php echo $this->element('overview'); ?>

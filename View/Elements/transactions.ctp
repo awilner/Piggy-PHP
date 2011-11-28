@@ -2,8 +2,6 @@
   // Add our own currency formats.
   $this->element('currency');
 ?>
-	<h2><?php echo __('%s - Transactions',$account);?></h2>
-	<?php echo $this->element('timeline'); ?>
 	<table cellpadding="0" cellspacing="0" class="transaction">
 	<tr class="transaction_upper">
 			<th class="transaction"><?php echo __('Payee');?></th>

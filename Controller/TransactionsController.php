@@ -57,7 +57,8 @@ class TransactionsController extends AppController {
 
 		// Set account name.
 		$this->Account->id = $accountId;
-		$this->set('account',$this->Account->field('name'));
+		//$this->set('account',$this->Account->field('name'));
+		$this->set('page_header', __('%s - Transactions',$this->Account->field('name')));
 
 		// Set month and year.
 		$this->set('month',substr($yearMonth,4,2));

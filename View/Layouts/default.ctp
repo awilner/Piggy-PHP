@@ -60,10 +60,15 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			</div>
 
 			<div id="main_content">
+				<div id="headings">
+					<h1 id="page_header"><?php echo $page_header; ?></h1>
+					<div id="timeline">
+						<?php if(isset($month) && isset($year)) echo $this->element('timeline'); ?>
+					</div>
+				</div>
 				<div id="loading_div" style="display: none;">
 			    		<?php echo $this->Html->image('ajax-loader.gif'); ?>
 				</div>
-
 				<div id="main_display">
 					<?php echo $content_for_layout; ?>
 				</div>

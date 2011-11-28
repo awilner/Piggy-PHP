@@ -1,1 +1,1 @@
-Overview - <?php echo $currentAccountOverview; ?>
+Overview

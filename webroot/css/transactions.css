@@ -3,37 +3,44 @@ table.transaction
 	border-collapse:collapse;
 }
 
-tr.altrow td
+table.transaction tr td
+{
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.transaction tr.altrow td
 {
 	background-color:#EEEEEE;
 }
 
-td.transaction
+table.transaction tr td.transaction
 {
 	border:1px solid #555555;
 }
 
-tr.transaction_upper td
+table.transaction tr.transaction_upper td
 {
 	border-bottom:1px solid #DDDDDD;
 }
 
-td.transaction_noborder
+table.transaction tr td.transaction_noborder
 {
 	border:none;
 }
 
-td.transaction_date
+table.transaction tr td.transaction_date
 {
 	border-bottom:1px solid #555555;
 }
 
-td.payee
+table.transaction tr td.payee
 {
 	width:50%;
 }
 
-td.status
+table.transaction tr td.status
 {
 	width:1%;
 }

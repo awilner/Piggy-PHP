@@ -32,18 +32,21 @@ class AccountsController extends AppController {
 
 		// Check if type is valid.
 		$type = $this->NavMenu->checkType($type);
-		$this->set('currentAccountOverview',Sanitize::html($type));
+		$account = __(Sanitize::html($type));
 
 		if($type == $this->NavMenu->checkType(null))
 		{
 			// Show general overview.
-			$this->set('currentAccountOverview','Global');
+			$account=__('Global');
 		}
+		$this->set('page_header',__('%s - Overview',$account));
 
 		// Set the idata needed for nav menu.
 		$this->set('navMenu', $this->NavMenu->menu($type));
 		$this->set('selectedTab','overview');
 		$this->set('accountId',$type);
+
+		$this->set('overview','');
 
 		// If the request is ajax, use ajax component.
                 if($this->request->isAjax())
@@ -64,13 +67,16 @@ class AccountsController extends AppController {
 		}
 
 		$this->Account->id = $id;
-		$this->set('currentAccountOverview',$this->Account->field('name'));
+		$account = Sanitize::html($this->Account->field('name'));
+		$this->set('page_header',__('%s - Overview',$account));
 
 		// Set the idata needed for nav menu.
 	        $type = $this->NavMenu->checkType($this->Account->getType($id));
 		$this->set('navMenu', $this->NavMenu->menu($type));
 		$this->set('selectedTab','overview');
 		$this->set('accountId',$id);
+
+		$this->set('overview','');
 
 		// If the request is ajax, use ajax component.
                 if($this->request->isAjax())

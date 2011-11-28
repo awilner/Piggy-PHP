@@ -5,6 +5,7 @@ div#nav_menu_bar {
 ul.nav {
 	font-size:large;
 	list-style:none;
+	margin:0 12px;
 }
 
 ul.nav li {
@@ -24,6 +25,7 @@ ul.tab li {
 ul.nav li.selected {
 	background-color:#AAAAAA;
 	padding:5px;
+	font-weight: bold;
 }
 
 ul.tab li.selected {
@@ -32,13 +34,19 @@ ul.tab li.selected {
 
 ul.nav li:not(.selected):hover {
 	background-color:#DDDDDD;
-	cursor:pointer;
+	/*cursor:pointer;*/
 }
 
 ul.nav li a {
+	color: #003d4c;
 	display:block;
 	text-decoration:none;
+	font-weight: bold;
 	padding:5px;
+}
+
+ul.nav li a:hover {
+	color: #367889;
 }
 
 ul.tab li a {
