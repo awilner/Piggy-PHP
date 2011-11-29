@@ -46,6 +46,11 @@ div#header h1
     padding: 0 30px;
 }
 
+div#content
+{
+	padding:10px;
+}
+
 div#main_content
 {
 	width:78%;
@@ -82,12 +87,12 @@ div#nav_menu_bar {
 	float:right;
 }
 
-td.value
+.value
 {
 	text-align:right;
 }
 
-td.negative
+.negative
 {
 	color:red;
 }

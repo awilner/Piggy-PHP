@@ -3,13 +3,13 @@ table.transaction
 	border-collapse:collapse;
 	margin-top:0.5em;
 	width:100%;
+	text-align: left;
+	vertical-align: top;
 }
 
 table.transaction tr td
 {
-    padding: 6px;
-    text-align: left;
-    vertical-align: top;
+	padding: 6px;
 }
 
 table.transaction tr.altrow td
