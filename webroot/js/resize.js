@@ -1,13 +1,13 @@
-Event.observe(document,'dom:loaded',function() {
-    var bodyheight = document.viewport.getHeight();
-    $('main_content').setStyle({height:(bodyheight - $('main_content').offsetTop - 16)+'px'});
-    $('left_menu_list').setStyle({height:(bodyheight - $('left_menu_list').offsetTop - 8)+'px'});
+$(document).ready(function() {
+    var bodyheight = $(window).height();
+    $('#main_content').height(bodyheight - $('#main_content').offset().top - 16);
+    $('#left_menu_list').height(bodyheight - $('#left_menu_list').offset().top - 8);
 });
 
 // for the window resize
-Event.observe(window,'resize',function() {
-    var bodyheight = document.viewport.getHeight();
-    $('main_content').setStyle({height:(bodyheight - $('main_content').offsetTop - 16)+'px'});
-    $('left_menu_list').setStyle({height:(bodyheight - $('left_menu_list').offsetTop - 8)+'px'});
+$(window).resize(function() {
+    var bodyheight = $(window).height();
+    $('#main_content').height(bodyheight - $('#main_content').offset().top - 16);
+    $('#left_menu_list').height(bodyheight - $('#left_menu_list').offset().top - 8);
 });
 

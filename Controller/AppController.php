@@ -10,7 +10,7 @@ class AppController extends Controller {
 		'Session',
 		'RequestHandler');
 	var $helpers = array(
-		'Js' => array('Prototype'),
+		'Js' => array('Jquery'),
 		'Session',
 		'Form',
 		'Html',

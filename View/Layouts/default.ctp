@@ -35,8 +35,19 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->css('navmenu');
 		echo $this->Html->css('transactions');
 
-		echo $this->Html->script('prototype');
-		echo $this->Html->script('scriptaculous.js?load=effects'); 
+		if(Configure::read('debug') == 0 )
+		{
+			// Production mode.
+			echo $this->Html->script('jquery-1.7.1.min');
+			echo $this->Html->script('jquery-ui-1.8.16.custom.min');
+		}
+		else
+		{
+			// Debug mode.
+			echo $this->Html->script('jquery-1.7.1');
+                        echo $this->Html->script('jquery-ui-1.8.16.custom.min');
+		}
+
 		echo $this->Html->script('updater.js'); 
 		echo $this->Html->script('resize.js'); 
 
