@@ -10,9 +10,10 @@ if(isset($accounts))
 <?php foreach($accounts as $type=>$list): ?>
   <li class="account_separator"><hr></li>
   <li class="account_group">
+    <div class="toggle" onclick="toggleMenu('<?php echo $type; ?>')"/>
     <a href="<?php echo Router::url('/accounts/index/'.$type); ?>" onclick="go('<?php echo Router::url('/accounts/index/'.$type); ?>');return false;"><?php echo __($totals[$type]['name']); ?></a>
   </li>
-  <ul>
+  <ul id="account_group_<?php echo $type; ?>">
   <?php foreach($list as $account): ?>
     <li class="account">
       <a href="<?php echo Router::url('/accounts/index/'.$account['id']); ?>" onclick="go('<?php echo Router::url('/accounts/index/'.$account['id']); ?>');return false;">

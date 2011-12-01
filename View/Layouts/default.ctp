@@ -48,8 +48,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                         echo $this->Html->script('jquery-ui-1.8.16.custom.min');
 		}
 
-		echo $this->Html->script('updater.js'); 
-		echo $this->Html->script('resize.js'); 
+		echo $this->Html->script('updater'); 
+		echo $this->Html->script('resize'); 
+		echo $this->Html->script('collapsible'); 
 
 		echo $scripts_for_layout;
 	?>

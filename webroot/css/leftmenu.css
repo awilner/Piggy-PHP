@@ -52,3 +52,15 @@ a span.value
 {
 	font-weight:normal;
 }
+
+div.toggle
+{
+	cursor:default;
+	background:url("/reader/ui/3660573864-lhn-sprite.png") no-repeat scroll 0 0 transparent;
+}
+
+div.toggle_open
+{
+}
+
+
