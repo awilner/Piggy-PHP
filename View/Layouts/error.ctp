@@ -31,27 +31,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('cake.generic');
-		echo $this->Html->css('main');
-		echo $this->Html->css('leftmenu');
-		echo $this->Html->css('navmenu');
-		echo $this->Html->css('transactions');
-
-		if(Configure::read('debug') == 0 )
-		{
-			// Production mode.
-			echo $this->Html->script('jquery-1.7.1.min');
-			echo $this->Html->script('jquery-ui-1.8.16.custom.min');
-		}
-		else
-		{
-			// Debug mode.
-			echo $this->Html->script('jquery-1.7.1');
-                        echo $this->Html->script('jquery-ui-1.8.16.custom.min');
-		}
-
-		echo $this->Html->script('updater'); 
-		echo $this->Html->script('resize'); 
-		echo $this->Html->script('collapsible'); 
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -67,28 +46,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 			<?php echo $this->Session->flash(); ?>
 
-			<div id="nav_menu_bar">
-				<?php echo $this->element('navmenu'); ?>
-			</div>
-
-			<div id="left_menu_list">
-				<?php echo $this->element('accountlist'); ?>
-			</div>
-
-			<div id="main_content">
-				<div id="headings">
-					<h1 id="page_header"><?php if(isset($page_header)) echo $page_header; ?></h1>
-					<div id="timeline">
-						<?php if(isset($month) && isset($year)) echo $this->element('timeline'); ?>
-					</div>
-				</div>
-				<div id="loading_div" style="display: none;">
-			    		<?php echo $this->Html->image('ajax-loader.gif'); ?>
-				</div>
-				<div id="main_display">
-					<?php echo $content_for_layout; ?>
-				</div>
-			</div>
+			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
 			<?php echo $this->Html->link(

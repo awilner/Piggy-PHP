@@ -1,5 +1,10 @@
 <?php
 /**
+ * Application model for Cake.
+ *
+ * This file is application-wide model file. You can put all
+ * application-wide model-related methods here.
+ *
  * PHP 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
@@ -11,9 +16,20 @@
  *
  * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app
- * @since         CakePHP(tm) v 0.10.0.1076
+ * @package       app.Model
+ * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-require 'webroot' . DIRECTORY_SEPARATOR . 'index.php';
+App::uses('Model', 'Model');
+
+/**
+ * Application model for Cake.
+ *
+ * Add your application-wide methods in the class below, your models
+ * will inherit them.
+ *
+ * @package       app.Model
+ */
+class AppModel extends Model {
+}

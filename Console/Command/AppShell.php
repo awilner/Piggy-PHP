@@ -1,5 +1,7 @@
 <?php
 /**
+ * AppShell file
+ *
  * PHP 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
@@ -11,9 +13,20 @@
  *
  * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app
- * @since         CakePHP(tm) v 0.10.0.1076
+ * @since         CakePHP(tm) v 2.0
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-require 'webroot' . DIRECTORY_SEPARATOR . 'index.php';
+App::uses('Shell', 'Console');
+
+/**
+ * Application Shell
+ *
+ * Add your application-wide methods in the class below, your shells
+ * will inherit them.
+ *
+ * @package       app.Console.Command
+ */
+class AppShell extends Shell {
+
+}
