@@ -1,20 +1,37 @@
 <?php
   // Add our own currency formats.
   $this->element('currency');
+
+  // Set variables for SlickGrid
+  $script = "var columns = [
+	{id: \"payee\", name: \"". __('Payee') ."\",cssClass: \"transaction payee\"},
+	{id: \"debit\", name: \"". __('Debit') ."\",cssClass: \"transaction value\"},
+	{id: \"credit\", name: \"". __('Credit') ."\",cssClass: \"transaction value\"},
+	{id: \"status\", name: \"". __('Status') ."\",cssClass: \"transaction status\"},
+	{id: \"balance\", name: \"". __('Balance') ."\",cssClass: \"transaction value\"}
+];";
+  echo $this->Html->scriptBlock($script);
+  echo $this->Html->script("transaction_remotemodel");
+  echo $this->Html->script("transaction_slickgrid");
 ?>
-	<table cellpadding="0" cellspacing="0" class="transaction">
-	<tr class="transaction_upper">
+<!--<div id="test" style="width:100%;height:600px;"><?php //var_dump($transactions); ?></div>-->
+<div id="paginator" style="width:100%;"><?php echo $this->Paginator->numbers(); ?></div>
+<table cellpadding="0" cellspacing="0" class="transaction">
+	<thead id="transaction_header">
+		<tr class="transaction_upper">
 			<th class="transaction"><?php echo __('Payee');?></th>
 			<th class="transaction"><?php echo __('Debit');?></th>
 			<th class="transaction"><?php echo __('Credit');?></th>
 			<th class="transaction"><?php echo __('Status');?></th>
 			<th class="transaction"><?php echo __('Balance');?></th>
-	</tr>
-	<tr class="transaction_lower">
+		</tr>
+		<tr class="transaction_lower">
 			<th class="transaction"><?php echo __('Account');?></th>
 			<th colspan="2" class="transaction"><?php echo __('Category');?></th>
 			<th colspan="2" class="transaction"><?php echo __('Memo');?></th>
-	</tr>
+		</tr>
+	</thead>
+	<tbody id="transaction_body">
 	<?php
 	$i = 0;
 	$lastBalance = 0;
@@ -53,4 +70,5 @@
 		<td colspan="5" class="transaction_noborder"><hr></td>
 	</tr>
 <?php endforeach; ?>
-	</table>
+	</tbody>
+</table>

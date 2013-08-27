@@ -40,6 +40,8 @@ class Transaction extends AppModel {
 		)
 	);
 
+	public $findMethods = array('statement' => true);
+
 	// Create an instance of Balance.
 	private static $balance;
 
@@ -216,11 +218,91 @@ class Transaction extends AppModel {
 		return true;
 	}
 
+	/**
+	 * Overridden paginateCount method
+	 */
+	public function paginateCount($conditions = null, $recursive = 0, $extra = array())
+	{
+		if
+		(
+			isset($extra) &&
+			array_key_exists('type', $extra) &&
+			$extra['type'] === 'statement' &&
+			array_key_exists('account', $extra)
+		)
+		{
+			$conditions = array ('OR'=> array('to_account_id'=>$extra['account'], 'from_account_id'=>$extra['account']),'status !='=>'P');
+			return $this->find('count', array('conditions'=>$conditions,'fields'=>'DISTINCT Transaction.date'));
+		}
+		return 1;
+	}
+
+	// Retrieve a list of transactions for a given page.
+	protected function _findStatement($state, $query, $results = array())
+	{
+		$account = $query['account'];
+		$limit = 30;
+		if(array_key_exists('limit',$query) && $query['limit'] > 0)
+		{
+			$limit = $query['limit'];
+			unset($query['limit']);
+		}
+		if($state === 'before')
+		{
+			$query['order'] = 'date';
+			$conditions = array ('OR'=> array('to_account_id'=>$account, 'from_account_id'=>$account),'status !='=>'P');
+
+			// We need to calculate the start and end dates for the pagination.
+			//$dates = $this->find('count', array('conditions'=>$conditions,'fields'=>'DISTINCT Transaction.date'));
+			$firstDate = $this->find
+			(
+				'first',
+				array
+				(
+					'conditions'=>$conditions,
+					'fields'=>'DISTINCT Transaction.date',
+					'order'=>'date',
+					'offset'=>$limit*($query['page']-1)
+				)
+			);
+
+			$lastDate = $this->find
+			(
+				'first',
+				array
+				(
+					'conditions'=>$conditions,
+					'fields'=>'DISTINCT Transaction.date',
+					'order'=>'date',
+					'offset'=>$limit*$query['page']-1
+				)
+			);
+			// Correct the last date in case we are in the last page.
+			if($lastDate == null)
+				$lastDate = $this->find
+				(
+					'first',
+					array
+					(
+						'conditions'=>$conditions,
+						'fields'=>'DISTINCT Transaction.date',
+						'order'=>'date DESC',
+					)
+				);
+
+			$startDate = $firstDate['Transaction']['date'];
+			$endDate = $lastDate['Transaction']['date'];
+			$conditions['date >='] = $startDate;
+			$conditions['date <='] = $endDate;
+			$query['conditions'] = $conditions; 
+			return $query;
+		}
+		return $this->processStatement($results,$account,$query['conditions']['date >='],$query['conditions']['date <=']);
+	}
+
 	// Retrieve a list of transactions for a given account and a given date. Pending transactions are ignored.
 	function listTransactions($account,$startDate = null,$endDate=null)
 	{
-		$transactions = array();
-
 		$conditions = array ('OR'=> array('to_account_id'=>$account, 'from_account_id'=>$account),'status !='=>'P');
 		if($startDate != null)
 			$conditions['date >='] = $startDate;
@@ -229,6 +311,14 @@ class Transaction extends AppModel {
 
 		// Get the results.
 		$results = $this->find('all', array('conditions'=>$conditions,'order'=>'date'));
+
+		return $this->processStatement($results,$account,$startDate,$endDate);
+	}
+
+	// Process a list of transactions to calculate the intermediate balanxces and format the results for the view.
+	function processStatement($results,$account,$startDate = null,$endDate=null)
+	{
+		$transactions = array();
 
 		// Now get the full path to the category of each transaction.
 		if($results)

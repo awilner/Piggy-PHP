@@ -17,7 +17,7 @@ if(isset($accounts))
   <?php foreach($list as $account): ?>
     <li class="account">
       <a href="<?php echo Router::url('/accounts/index/'.$account['id']); ?>" onclick="go('<?php echo Router::url('/accounts/index/'.$account['id']); ?>');return false;">
-        <?php echo $account['name']; ?>
+	<?php echo $account['name']; ?>
         <span class="value<?php if($account['balance'] < 0) echo " negative"; ?>"><?php echo $this->Number->currency($account['balance'],$account['currency']); ?></span>
       </a>
     </li>

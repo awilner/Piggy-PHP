@@ -35,6 +35,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->css('leftmenu');
 		echo $this->Html->css('navmenu');
 		echo $this->Html->css('transactions');
+		//echo $this->Html->css('slick.grid');
 
 		if(Configure::read('debug') == 0 )
 		{
@@ -49,9 +50,15 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                         echo $this->Html->script('jquery-ui-1.8.16.custom.min');
 		}
 
+		//echo $this->Html->script('SlickGrid/lib/jquery.event.drag-2.2'); 
+		//echo $this->Html->script('SlickGrid/lib/jquery.jsonp-2.4.min'); 
+
 		echo $this->Html->script('updater'); 
 		echo $this->Html->script('resize'); 
-		echo $this->Html->script('collapsible'); 
+		echo $this->Html->script('collapsible');
+ 
+		//echo $this->Html->script('SlickGrid/slick.core'); 
+		//echo $this->Html->script('SlickGrid/slick.grid'); 
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -78,9 +85,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<div id="main_content">
 				<div id="headings">
 					<h1 id="page_header"><?php if(isset($page_header)) echo $page_header; ?></h1>
-					<div id="timeline">
-						<?php if(isset($month) && isset($year)) echo $this->element('timeline'); ?>
-					</div>
+					<!--<div id="timeline">
+						<?php //if(isset($month) && isset($year)) echo $this->element('timeline'); ?>
+					</div>-->
 				</div>
 				<div id="loading_div" style="display: none;">
 			    		<?php echo $this->Html->image('ajax-loader.gif'); ?>
